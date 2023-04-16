@@ -1,0 +1,31 @@
+data-path="path_to_data" # Path
+
+# Network
+Xdns-enabled=true
+bootnodes=[
+    "enode://8858f12ae98fc0f639681470d7f1b8c3a716e53c2dcaa2a6eaf120e0657d38b84e2d1c63d26227af038cd0f4da6429c975f3d70cf26646f7223cf2f9d8bfdf94@mainnet-node0.grovechain.io:30303",
+    "enode://a26a61098a9aca0950e94f2817faf249601ce7da3c574e3b8466be3cee7cfbe7177da175900a7cba79be48cdcb347538629c88e38d527dd2459edefc628ee778@mainnet-node1.grovechain.io:30303",
+    "enode://70ea57a25726e8a3660072919fa461e057a88ca0ad7c96753a52c25246a0d6814a383cc634185c4e776ab8a901dbf1ede291e84e0fe9b406a6f9c428e026fc3f@mainnet-node2.grovechain.io:30303"
+    ]
+
+p2p-port=30303
+max-peers=100
+
+rpc-http-enabled=true
+rpc-http-host="0.0.0.0"
+rpc-http-port=8545
+rpc-http-api=["DEBUG","ETH","NET","QBFT","TRACE","TXPOOL","WEB3"]
+
+rpc-ws-enabled=true
+rpc-ws-host="0.0.0.0"
+rpc-ws-port=8546
+rpc-ws-api=["DEBUG","ETH","NET","QBFT","TRACE","TXPOOL","WEB3"]
+
+# Chain
+genesis-file="/path_to_genesis.json" # Path to the custom genesis file
+
+
+host-allowlist=["*"]
+rpc-http-cors-origins=["all"]
+
+
